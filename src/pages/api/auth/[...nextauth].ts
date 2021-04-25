@@ -19,10 +19,31 @@ export default NextAuth({
 
         try {
             await fauna.query(
-                q.Create(
-                    q.Collection('users'),
-                    { data: { email }}
-                )
+                // Verifica se já existe um usuário pelo email,
+                // se não existir(not) faz:
+                q.If(
+                    q.Not(
+                        q.Exists(
+                            q.Match(
+                                q.Index('user_by_email'),
+                                q.Casefold(email)
+                            )
+                        )
+                    ),
+                    // Se verdadeiro, faz isso:
+                    q.Create(
+                        q.Collection('users'),
+                        { data: { email }}
+                    ),
+
+                    // Se falso, faz isso:
+                    q.Get(
+                        q.Match(
+                            q.Index('user_by_email'),
+                            q.Casefold(email)
+                        )
+                    )
+                ),
             )
 
             return true;
