@@ -9,8 +9,8 @@
   <a href="#books-requisitos">Dependências</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-começando">Começando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#computer-iniciando-front-end">Next.Js</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#hammer-variaveis-de-ambiente">Variáveis Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#dart-iniciando-o-servidor">Stripe CLI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#hammer-variáveis-de-ambiente">Variáveis Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#dart-iniciando-o-stripe-cli">Stripe CLI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   
 </p>
 
@@ -96,7 +96,7 @@ Mas Mauricio, o que são essas tecnologias, posso usar também?  Claro, pode usa
   PRISMIC_ACCESS_TOKEN=
 ```
 
-## :dart: Iniciando o Prismic CLI
+## :dart: Iniciando o Stripe CLI
 ```bash
   # Rodar o Stripe
   $ stripe listen --forward-to localhost:3000/api/webhooks
