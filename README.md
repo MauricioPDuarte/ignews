@@ -36,7 +36,7 @@ Mas Mauricio, o que são essas tecnologias, posso usar também?  Claro, pode usa
 - Ter uma conta no [**Stripe**](https://stripe.com/en-br)
 - Ter uma conta no [**Prismic CMS**](https://prismic.io/)
 - Criar as variáveis de ambiente
-- Criar as credenciais o GitHub
+- Criar as credenciais do GitHub
 
 ## :syringe: Dependências
 * Next.js
